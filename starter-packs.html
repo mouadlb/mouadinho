@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Packs Starter | Mouadinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-900 dark:text-white font-geist-mono">mouadinho</a>
+                <div class="flex items-center space-x-6">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <i class="ri-sun-line text-xl dark:hidden"></i>
+                        <i class="ri-moon-line text-xl hidden dark:block text-white"></i>
+                    </button>
+                    <button id="contact-trigger" class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="container mx-auto px-4 pt-16 pb-8">
+            <a href="index.html" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-400 mb-6">
+                <i class="ri-arrow-left-line mr-2"></i> Retour à l'accueil
+            </a>
+            <div class="max-w-3xl">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+                    Packs <span class="text-amber-500 dark:text-amber-400">Starter</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                    Solutions complètes, à prix fixe, pour lancer votre présence numérique professionnelle sans stress.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pack 1 -->
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <div class="bg-amber-50 dark:bg-amber-900/20 p-6 border-b border-gray-200 dark:border-gray-700">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Pack Identité</h3>
+                        <div class="mt-2 text-3xl font-bold text-amber-600 dark:text-amber-400">250 DH</div>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">L'essentiel pour démarrer votre identité visuelle</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Logo simple</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Logo principal + 1 variante</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Cartes de visite</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Design moderne et fichiers pour impression</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Flyer promotionnel</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Flyer A5 recto-verso</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Palette de couleurs</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Définition de vos couleurs de marque</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8">
+                            <button id="pack1-contact" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition-colors">
+                                Choisir ce pack
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pack 2 -->
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden transform scale-105 shadow-xl relative z-10">
+                    <div class="absolute top-0 inset-x-0 flex justify-center">
+                        <div class="bg-amber-600 text-white text-xs px-3 py-1 rounded-b-md font-medium">
+                            PLUS POPULAIRE
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20 p-6 border-b border-gray-200 dark:border-gray-700 pt-8">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Pack Digital</h3>
+                        <div class="mt-2 text-3xl font-bold text-amber-600 dark:text-amber-400">600 DH</div>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Présence web et réseaux sociaux optimisée</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Landing page</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Page web responsive avec formulaire</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">3 visuels Instagram</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Posts cohérents avec votre marque</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Optimisation de profil</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Bio, stories à la une et paramètres</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Guide de hashtags</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Sélection de hashtags pertinents</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Formation 30 minutes</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Pour gérer vos réseaux sociaux</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8">
+                            <button id="pack2-contact" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition-colors">
+                                Choisir ce pack
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pack 3 -->
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <div class="bg-amber-50 dark:bg-amber-900/20 p-6 border-b border-gray-200 dark:border-gray-700">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Pack Professionnel</h3>
+                        <div class="mt-2 text-3xl font-bold text-amber-600 dark:text-amber-400">1200 DH</div>
+                        <p class="mt-2 text-gray-600 dark:text-gray-300">Solution complète pour entrepreneurs</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Site vitrine</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Jusqu'à 5 pages avec formulaire</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Identité visuelle</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Logo + couleurs + typographie</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Cartes de visite et flyer</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Design cohérent avec votre marque</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">Optimisation SEO</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Référencement pour moteurs de recherche</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="ri-check-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <div>
+                                    <span class="block font-medium text-gray-900 dark:text-white">6 posts Instagram</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">Pour démarrer votre présence</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8">
+                            <button id="pack3-contact" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition-colors">
+                                Choisir ce pack
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="container mx-auto px-4 py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-12 text-center">Pourquoi choisir un pack complet ?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center px-4">
+                    <div class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-coins-line text-2xl text-amber-600 dark:text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Économies</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Les packs vous permettent d'économiser jusqu'à 25% par rapport aux services achetés séparément.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center text-center px-4">
+                    <div class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-scales-3-line text-2xl text-amber-600 dark:text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Cohérence</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Tous les éléments sont créés ensemble pour une identité de marque cohérente sur tous les supports.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center text-center px-4">
+                    <div class="w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-time-line text-2xl text-amber-600 dark:text-amber-400"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Simplicité</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Un seul interlocuteur, un prix fixe et un processus simplifié pour lancer votre projet plus rapidement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-12 text-center">Ce que disent mes clients</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <div class="flex space-x-1 mb-4 text-amber-500">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        "J'ai choisi le Pack Digital pour lancer mon salon de coiffure. Non seulement j'ai maintenant une superbe landing page, mais les publications Instagram ont déjà attiré plusieurs nouveaux clients. Mouadinho a su parfaitement comprendre mon style et le transmettre visuellement."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mr-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=144&h=144" alt="Sophia Benali" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="font-medium text-gray-900 dark:text-white">Sophia Benali</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Salon Crinière d'Or</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <div class="flex space-x-1 mb-4 text-amber-500">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">
+                        "Le Pack Professionnel a transformé mon restaurant. Le site web est magnifique, facile à naviguer, et les clients peuvent réserver directement. L'identité visuelle est cohérente sur toutes nos plateformes et supports. Un investissement qui a déjà largement porté ses fruits!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mr-3">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=144&h=144" alt="Karim Tazi" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="font-medium text-gray-900 dark:text-white">Karim Tazi</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Restaurant L'Olivier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container mx-auto px-4 py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Questions fréquentes</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="font-medium text-lg text-gray-900 dark:text-white mb-2">Quels sont les délais de livraison ?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Les délais varient selon les packs : 7-10 jours pour le Pack Identité, 14-18 jours pour le Pack Digital, et 21-30 jours pour le Pack Professionnel. Ces délais peuvent varier selon la complexité du projet et la rapidité des retours.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="font-medium text-lg text-gray-900 dark:text-white mb-2">Puis-je personnaliser un pack selon mes besoins ?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Oui, les packs peuvent être adaptés en fonction de vos besoins spécifiques. Nous pouvons ajouter ou retirer certains éléments et ajuster le prix en conséquence. Contactez-moi pour discuter de vos besoins particuliers.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="font-medium text-lg text-gray-900 dark:text-white mb-2">Combien de révisions sont incluses ?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Tous les packs incluent 2 cycles de révisions pour chaque élément. Des révisions supplémentaires peuvent être ajoutées moyennant un supplément, selon la complexité des changements demandés.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="font-medium text-lg text-gray-900 dark:text-white mb-2">Comment se déroule le processus de travail ?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Le processus commence par une consultation pour comprendre vos besoins et votre vision. Ensuite, je développe une proposition créative, suivie de phases de création et révision. Une fois approuvé, je finalise et livre tous les éléments du pack avec les instructions nécessaires.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-amber-50 to-amber-100 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 text-center">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Prêt à lancer votre projet ?</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+                    Contactez-moi dès aujourd'hui pour discuter de votre projet et voir comment je peux vous aider à établir une présence numérique professionnelle.
+                </p>
+                <button id="cta-contact" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                    Prendre contact
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact Modal -->
+        <div id="contact-modal" class="fixed inset-0 z-50 hidden">
+            <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm" id="modal-backdrop"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md">
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-6 border border-gray-200 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Contact</h3>
+                        <button id="close-modal" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <i class="ri-close-line text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 border border-gray-200 dark:border-gray-700 rounded-lg">
+                            <i class="ri-smartphone-line text-xl text-gray-500 dark:text-gray-400 mr-4"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Téléphone</div>
+                                <div class="text-gray-900 dark:text-white">+212 674 45 11 80</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 border border-gray-200 dark:border-gray-700 rounded-lg">
+                            <i class="ri-mail-line text-xl text-gray-500 dark:text-gray-400 mr-4"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Email</div>
+                                <div class="text-gray-900 dark:text-white">mouadguarraz@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                            <div class="text-sm text-gray-500 dark:text-gray-400 mb-3">Réseaux sociaux</div>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/mouadinho__/" target="_blank" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                                    <i class="ri-instagram-line text-xl text-gray-700 dark:text-gray-300"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mouad-guarraz-a46174360/" target="_blank" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                                    <i class="ri-linkedin-line text-xl text-gray-700 dark:text-gray-300"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-auto pt-12 pb-6 border-t border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2023 Mouadinho. Tous droits réservés.
+                    </p>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="contact.js"></script>
+    <script>
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+        
+        // Add contact trigger functionality for multiple buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactTriggers = [
+                document.getElementById('pack1-contact'),
+                document.getElementById('pack2-contact'),
+                document.getElementById('pack3-contact'),
+                document.getElementById('cta-contact')
+            ];
+            
+            const contactModal = document.getElementById('contact-modal');
+            
+            contactTriggers.forEach(trigger => {
+                if (trigger && contactModal) {
+                    trigger.addEventListener('click', () => {
+                        contactModal.classList.remove('hidden');
+                        document.body.style.overflow = 'hidden';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

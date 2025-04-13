@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Développement Web | Mouadinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-900 dark:text-white font-geist-mono">mouadinho</a>
+                <div class="flex items-center space-x-6">
+                    <button id="contact-trigger" class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="container mx-auto px-4 pt-16 pb-8">
+            <a href="index.html" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-green-500 dark:hover:text-green-400 mb-6">
+                <i class="ri-arrow-left-line mr-2"></i> Retour à l'accueil
+            </a>
+            <div class="max-w-3xl">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white leading-tight">
+                    Développement <span class="text-green-500 dark:text-green-400">Web</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                    Établissez une présence en ligne professionnelle avec des sites web modernes, responsives et optimisés.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Details -->
+        <section class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Services proposés</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-window-line text-lg text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900 dark:text-white">Site vitrine simple</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Création de site web de présentation avec les informations essentielles de votre entreprise.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-refresh-line text-lg text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900 dark:text-white">Refonte de site existant</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Modernisation de votre site web actuel pour améliorer son design et ses performances.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-layout-5-line text-lg text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900 dark:text-white">Landing pages</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Création de pages d'atterrissage optimisées pour les promotions ou événements spéciaux.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-message-3-line text-lg text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900 dark:text-white">Formulaires de contact</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Intégration de formulaires pour faciliter la prise de contact ou les réservations.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                            <div class="flex items-start mb-4">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-gallery-line text-lg text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900 dark:text-white">Portfolio en ligne</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Création d'un espace dédié pour présenter vos travaux, projets ou réalisations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Portfolio</h2>
+                    
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=500" alt="Site vitrine moderne" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=500" alt="Landing page" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1539278670307-a69d04dc8a75?auto=format&fit=crop&q=80&w=500" alt="Portfolio en ligne" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=500" alt="Site responsive" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=500" alt="Dashboard design" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?auto=format&fit=crop&q=80&w=500" alt="Formulaire de contact" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="container mx-auto px-4 py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Caractéristiques</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-responsive-line text-xl text-green-600 dark:text-green-400"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Design responsive</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Sites parfaitement adaptés à tous les appareils: ordinateurs, tablettes et mobiles.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-speed-line text-xl text-green-600 dark:text-green-400"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Performance optimisée</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Sites rapides et optimisés pour un chargement efficace et une meilleure expérience utilisateur.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-search-line text-xl text-green-600 dark:text-green-400"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">SEO-friendly</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Structure et code optimisés pour un meilleur référencement dans les moteurs de recherche.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Tarifs</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Site vitrine</h3>
+                    <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-4">500 DH</div>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-300 mb-6">
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Jusqu'à 5 pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Design responsive</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Formulaire de contact</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Optimisation SEO de base</span>
+                        </li>
+                    </ul>
+                    <button id="contact-trigger-1" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors">
+                        Contacter
+                    </button>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Landing Page</h3>
+                    <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-4">350 DH</div>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-300 mb-6">
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Page unique performante</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Design attractif et conversionnel</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Formulaire intégré</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Optimisation pour les conversions</span>
+                        </li>
+                    </ul>
+                    <button id="contact-trigger-2" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors">
+                        Contacter
+                    </button>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6">
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Portfolio en ligne</h3>
+                    <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-4">800 DH</div>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-300 mb-6">
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Design premium personnalisé</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Galerie de projets optimisée</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Filtres et catégories</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-green-500 mt-1 mr-2"></i>
+                            <span>Mise à jour facile des projets</span>
+                        </li>
+                    </ul>
+                    <button id="contact-trigger-3" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition-colors">
+                        Contacter
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="container mx-auto px-4 py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Processus de travail</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 dark:text-green-400 font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Analyse</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Compréhension de vos besoins, objectifs et cible.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 dark:text-green-400 font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Design</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Création de maquettes et validation de l'apparence.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 dark:text-green-400 font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Développement</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Intégration et programmation de votre site.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-600 dark:text-green-400 font-bold">4</span>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Livraison</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        Mise en ligne et support post-lancement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Modal -->
+        <div id="contact-modal" class="fixed inset-0 z-50 hidden">
+            <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm" id="modal-backdrop"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md">
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-6 border border-gray-200 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Contact</h3>
+                        <button id="close-modal" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <i class="ri-close-line text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 border border-gray-200 dark:border-gray-700 rounded-lg">
+                            <i class="ri-smartphone-line text-xl text-gray-500 dark:text-gray-400 mr-4"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Téléphone</div>
+                                <div class="text-gray-900 dark:text-white">+212 674 45 11 80</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 border border-gray-200 dark:border-gray-700 rounded-lg">
+                            <i class="ri-mail-line text-xl text-gray-500 dark:text-gray-400 mr-4"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Email</div>
+                                <div class="text-gray-900 dark:text-white">mouadguarraz@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                            <div class="text-sm text-gray-500 dark:text-gray-400 mb-3">Réseaux sociaux</div>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/mouadinho__/" target="_blank" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                                    <i class="ri-instagram-line text-xl text-gray-700 dark:text-gray-300"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mouad-guarraz-a46174360/" target="_blank" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                                    <i class="ri-linkedin-line text-xl text-gray-700 dark:text-gray-300"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-auto pt-12 pb-6 border-t border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2023 Mouadinho. Tous droits réservés.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">
+                        Built with <a href="https://flowith.net" target="_blank" class="underline hover:text-gray-900 dark:hover:text-white">Flowith Oracle.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="contact.js"></script>
+    <script>
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+        
+        // Add contact trigger functionality for multiple buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactTriggers = [
+                document.getElementById('contact-trigger-1'),
+                document.getElementById('contact-trigger-2'),
+                document.getElementById('contact-trigger-3')
+            ];
+            
+            const contactModal = document.getElementById('contact-modal');
+            
+            contactTriggers.forEach(trigger => {
+                if (trigger && contactModal) {
+                    trigger.addEventListener('click', () => {
+                        contactModal.classList.remove('hidden');
+                        document.body.style.overflow = 'hidden';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
